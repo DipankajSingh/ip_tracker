@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./leaflet/leaflet.css" />
+  <script defer src="./leaflet/leaflet.js"></script>
+  <script defer src="./javascript.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="heading">IP Address Tracker</h1>
+    <div class="form">
+      <input type="text" class="search-box" placeholder="Search For any IP address or domain">
+      <button class="search-btn"><img src="./images/icon-arrow.svg" alt="cannot load the image"></button>
+    </div>
+    <div class="info-box">
+      <div class="parent">
+        <div class="sibling">IP ADDRESS</div>
+        <div id="ip" class="sibling">192.3.3.45.5</div>
+      </div>
+      <div class="parent">
+        <div class="sibling">LOCATION</div>
+        <div id="location" class="sibling">Brooklyn, NY 10001</div>
+      </div>
+      <div class="parent">
+        <div class="sibling">TIMEZONE</div>
+        <div id="time" class="sibling">UTC-05:00</div>
+      </div>
+      <div class="parent">
+        <div class="sibling">ISP</div>
+        <div id="isp" class="sibling">SpaceX Starlink</div>
+      </div>
+    </div>
+  </div>
+  <div id="map"> </div>
+
+  <div class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></p>
+    <p> Coded by <a href="https://www.frontendmentor.io/profile/DipankajSingh">Dipankaj</a></p>
+  </div>
+</body>
+
+</html>
